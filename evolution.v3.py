@@ -40,7 +40,7 @@ class unit:
     				direct_mat[node.ID] += [direct_2pt(node.x,node.y,other.x,other.y)]
     		self.times += 1 
     		self.topo[self.times] = [dist_mat,direct_mat]
-    		print self.topo
+    		#print self.topo
 
 class catch_unit(unit):
     def __init__(self,group,count,x,y):
@@ -169,7 +169,7 @@ def direct_2pt(x1,y1,x2,y2):
 	elif vert != 0: direct= [x,vert/y]
 	elif hori != 0 : direct = [hori/x,y]
 	else: direct = [x,y]
-	print direct
+	#print direct
 	return direct
 
 def dist_2pt(x1,y1,x2,y2):
